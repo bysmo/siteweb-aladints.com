@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aladin Technologies Solutions - Startup informatique burkinabè développant des solutions innovantes pour l'Afrique">
+    <meta name="keywords"
+        content="ALTES, Aladin, Technologies, Solutions digitales, Burkina Faso, Intelligence Artificielle, Applications sur mesure">
+    <title>ALTES - Aladin Technologies Solutions | Innovez pour l'Afrique</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container">
+            <div class="top-contact-wrapper">
+                <div class="top-contact-left">
+                    <a href="tel:+22653858497" class="top-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+226 53 85 84 97</span>
+                    </a>
+                    <a href="mailto:infos@aladints.com" class="top-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>infos@aladints.com</span>
+                    </a>
+                    <div class="top-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ouaga 2000, Ouagadougou</span>
+                    </div>
+                </div>
+                <div class="top-contact-right">
+                    <a href="https://www.facebook.com/profile.php?id=61553462770128" target="_blank"
+                        class="top-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aladin-technologies-solutions-7390a32a0/" target="_blank"
+                        class="top-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="img/ALTES.png" alt="ALTES Logo">
+                    <span class="logo-text">ALTES</span>
+                </div>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                    <li><a href="#solutions" class="nav-link">Nos Solutions</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="accueil" class="hero">
+        <!-- Hero Carousel -->
+        <div class="hero-carousel">
+            <!-- Slide 1 -->
+            <div class="hero-slide active"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('img/caroussel/solutions-digitales.jpg');">
+                <div class="container">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="hero-title">
+                            Innover pour <span class="text-gradient">l'Afrique</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Solutions digitales sur mesure pour transformer votre entreprise
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#solutions" class="btn btn-primary">
+                                <i class="fas fa-rocket"></i> Découvrir nos solutions
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i> Nous contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('img/caroussel/equipe-passionnee.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="text-gradient">Expertise locale</span> africaine
+                        </h1>
+                        <p class="hero-subtitle">
+                            Des équipes burkinabè passionnées au service de votre transformation digitale
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#apropos" class="btn btn-primary">
+                                <i class="fas fa-users"></i> Notre équipe
+                            </a>
+                            <a href="#services" class="btn btn-secondary">
+                                <i class="fas fa-briefcase"></i> Nos services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('img/caroussel/intelligence-artificielle.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Propulsez votre <span class="text-gradient">business</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Intelligence Artificielle, Cloud, Développement sur mesure adaptés au marché africain
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary">
+                                <i class="fas fa-cogs"></i> Notre expertise
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-phone"></i> +226 53 85 84 97
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('img/caroussel/clients-satisfaits.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="text-gradient">100+</span> clients satisfaits
+                        </h1>
+                        <p class="hero-subtitle">
+                            Startups, PME et grandes institutions nous font confiance au Burkina Faso
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#solutions" class="btn btn-primary">
+                                <i class="fas fa-star"></i> Nos réalisations
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-handshake"></i> Rejoignez-nous
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('img/caroussel/formation.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="text-gradient">Formation</span> & Accompagnement
+                        </h1>
+                        <p class="hero-subtitle">
+                            Développez les compétences de vos équipes avec nos programmes de formation certifiants
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="pages/formation.html" class="btn btn-primary">
+                                <i class="fas fa-graduation-cap"></i> Nos formations
+                            </a>
+                            <a href="pages/intelligence-artificielle.html" class="btn btn-secondary">
+                                <i class="fas fa-brain"></i> IA & ML
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Carousel Controls -->
+            <button class="hero-carousel-btn hero-prev" id="heroPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-carousel-btn hero-next" id="heroNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Hero Carousel Indicators -->
+            <div class="hero-indicators">
+                <span class="hero-indicator active" data-slide="0"></span>
+                <span class="hero-indicator" data-slide="1"></span>
+                <span class="hero-indicator" data-slide="2"></span>
+                <span class="hero-indicator" data-slide="3"></span>
+                <span class="hero-indicator" data-slide="4"></span>
+            </div>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats-overlay">
+            <div class="container">
+                <div class="hero-stats" data-aos="fade-up">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Solutions innovantes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Clients satisfaits</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">10 années d'expertise</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Qui sommes-nous ?</span>
+                <h2 class="section-title">Aladin Technologies Solutions (ALTES)</h2>
+                <p class="section-description">
+                <p>
+                    Une entreprise informatique au cœur de l'innovation digitale.
+                </p>
+                <p>
+                    ALTES est une entreprise de droit burkinabè , experte en développement de solutions technologiques
+                    dont en actif un portefeuille de produits tech valorisés à plus 152 000 euros
+                    soit plus de 100 Millions de Fcfa.
+                </p>
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Notre vision et notre mission</h3>
+                    <p>
+                        Notre vision est de devenir un acteur de référence de l'innovation digitale au Burkina Faso et
+                        au-delà.
+                    </p>
+                    <p>
+                        Notre mission est de faciliter l'accès aux technologies digitales et d'accompagner les
+                        entreprises dans leur transformation numérique, tout en valorisant l'expertise locale.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Innovation locale pour l'Afrique</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Solutions adaptées aux réalités locales</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expertise reconnue en IA et digital</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="img/caroussel/techteam.jpg" alt="Jeunes professionnels IT au Burkina Faso">
+                        <div class="image-overlay">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nos produits phares</span>
+                <h2 class="section-title">Solutions innovantes</h2>
+                <p class="section-description">
+                    Des applications conçues pour répondre aux besoins du marché africain
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <!-- Aladin Menu Pro -->
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="solution-icon">
+                        <img src="img/A-MenuPro.png" alt="Aladin MenuPro">
+                    </div>
+                    <h3 class="solution-title">Aladin Menu Pro</h3>
+                    <p class="solution-description">
+                        Solution complète de gestion de menu digital pour restaurants, bars et établissements.
+                        QR Code, commandes en ligne, et gestion intelligente.
+                    </p>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Menu digital interactif</li>
+                        <li><i class="fas fa-check"></i> Système de commande en ligne</li>
+                        <li><i class="fas fa-check"></i> Gestion des stocks</li>
+                        <li><i class="fas fa-check"></i> Analytics avancés</li>
+                    </ul>
+                    <a href="pages/menu-pro.html" class="solution-link">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Aladin Events -->
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-icon">
+                        <img src="img/A-Events.jpg" alt="Aladin Events">
+                    </div>
+                    <h3 class="solution-title">Aladin Events</h3>
+                    <p class="solution-description">
+                        Plateforme de gestion d'événements complète : billetterie, inscriptions,
+                        promotion et suivi en temps réel de vos événements.
+                    </p>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Billetterie en ligne</li>
+                        <li><i class="fas fa-check"></i> Gestion des participants</li>
+                        <li><i class="fas fa-check"></i> Promotion événementielle</li>
+                        <li><i class="fas fa-check"></i> Statistiques en temps réel</li>
+                    </ul>
+                    <a href="pages/events.html" class="solution-link">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Aladin Voyages -->
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-icon">
+                        <img src="img/A-Voyage.jpg" alt="Aladin Voyages">
+                    </div>
+                    <h3 class="solution-title">Aladin Voyages</h3>
+                    <p class="solution-description">
+                        Solution de gestion de transport et de voyages : réservations,
+                        suivi des trajets, gestion de flotte et optimisation des itinéraires.
+                    </p>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Réservation en ligne</li>
+                        <li><i class="fas fa-check"></i> Gestion de flotte</li>
+                        <li><i class="fas fa-check"></i> Suivi GPS en temps réel</li>
+                        <li><i class="fas fa-check"></i> Paiement mobile intégré</li>
+                    </ul>
+                    <a href="pages/voyages.html" class="solution-link">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Aladin Market -->
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="solution-icon">
+                        <img src="img/A-Market.jpg" alt="Aladin Market">
+                    </div>
+                    <h3 class="solution-title">Aladin Market</h3>
+                    <p class="solution-description">
+                        Marketplace africaine pour connecter vendeurs et acheteurs.
+                        E-commerce moderne avec paiement mobile et livraison intégrée.
+                    </p>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Marketplace multi-vendeurs</li>
+                        <li><i class="fas fa-check"></i> Paiement mobile sécurisé</li>
+                        <li><i class="fas fa-check"></i> Système de livraison</li>
+                        <li><i class="fas fa-check"></i> Interface multilingue</li>
+                    </ul>
+                    <a href="pages/market.html" class="solution-link">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Notre Expertise</span>
+                <h2 class="section-title">Services professionnels</h2>
+                <p class="section-description">
+                    Un accompagnement complet pour votre transformation digitale
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Développement sur mesure</h3>
+                    <p>
+                        Conception et développement d'applications web et mobile personnalisées,
+                        adaptées à vos besoins spécifiques et à votre secteur d'activité.
+                    </p>
+                    <a href="pages/developpement.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Intelligence artificielle</h3>
+                    <p>
+                        Formation et accompagnement des entreprises dans l'adoption et l'intégration
+                        de l'intelligence artificielle pour optimiser leurs processus.
+                    </p>
+                    <a href="pages/intelligence-artificielle.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Intelligence économique</h3>
+                    <p>
+                        Expertise en intelligence économique et stratégique pour vous aider
+                        à prendre des décisions éclairées et à développer votre avantage compétitif.
+                    </p>
+                    <a href="pages/intelligence-economique.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation & coaching</h3>
+                    <p>
+                        Programmes de formation sur mesure en développement web, mobile,
+                        data science, et transformation digitale pour vos équipes.
+                    </p>
+                    <a href="pages/formation.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Solutions cloud</h3>
+                    <p>
+                        Migration et hébergement cloud, infrastructure sécurisée et scalable
+                        pour vos applications et données critiques.
+                    </p>
+                    <a href="pages/cloud.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support & maintenance</h3>
+                    <p>
+                        Support technique 24/7, maintenance préventive et évolutive
+                        pour garantir la performance de vos solutions digitales.
+                    </p>
+                    <a href="pages/support.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Audit des Systèmes IT</h3>
+                    <p>
+                        Évaluation complète de votre infrastructure informatique pour
+                        identifier les risques, optimiser les performances et garantir la conformité.
+                    </p>
+                    <a href="pages/audit.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="service-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Tests & Validation</h3>
+                    <p>
+                        Services QA complets pour garantir la qualité de vos applications web et mobile
+                        avant leur mise en production.
+                    </p>
+                    <a href="pages/tests-validation.html" class="solution-link" style="margin-top: 16px;">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Témoignages</span>
+                <h2 class="section-title">Ce que disent nos clients</h2>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>
+                            "ALTES a transformé notre restaurant avec Aladin Menu Pro.
+                            Nos clients adorent le menu digital et nos ventes ont augmenté de 40%."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Amadou Traoré</h4>
+                            <span>Gérant, Restaurant Le Palmier</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>
+                            "Grâce à Aladin Events, nous gérons nos événements en toute simplicité.
+                            La billetterie en ligne et le suivi des participants sont excellents."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Fatou Diallo</h4>
+                            <span>Directrice, EventPro BF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>
+                            "L'accompagnement d'ALTES dans notre transformation digitale a été remarquable.
+                            Leur expertise en IA nous a permis d'optimiser nos processus."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jean-Baptiste Kaboré</h4>
+                            <span>DG, TechCorp Burkina</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Contactez-nous</span>
+                <h2 class="section-title">Parlons de votre projet</h2>
+                <p class="section-description">
+                    Notre équipe est prête à vous accompagner dans votre transformation digitale
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Informations de contact</h3>
+                    <p>N'hésitez pas à nous contacter pour discuter de vos besoins en solutions digitales.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Adresse</h4>
+                                <p>Ouaga 2000, à 200m du monuments des héros nationaux, Ouagadougou, Burkina Faso</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>infos@aladints.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Téléphone</h4>
+                                <p>+226 53858497/64182111/58031771 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61553462770128" target="_blank"
+                            class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aladin-technologies-solutions-7390a32a0/" target="_blank"
+                            class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service souhaité</label>
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="menu-pro">Aladin Menu Pro</option>
+                                <option value="events">Aladin Events</option>
+                                <option value="voyages">Aladin Voyages</option>
+                                <option value="market">Aladin Market</option>
+                                <option value="developpement">Développement sur mesure</option>
+                                <option value="ia">Intelligence Artificielle</option>
+                                <option value="formation">Formation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="img/ALTES.png" alt="ALTES Logo">
+                        <span>ALTES</span>
+                    </div>
+                    <p class="footer-description">
+                        Innovation digitale au service de l'Afrique.
+                        Solutions technologiques adaptées aux réalités locales.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61553462770128" target="_blank"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/aladin-technologies-solutions-7390a32a0/" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Nos Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/menu-pro.html">Aladin Menu Pro</a></li>
+                        <li><a href="pages/events.html">Aladin Events</a></li>
+                        <li><a href="pages/voyages.html">Aladin Voyages</a></li>
+                        <li><a href="pages/market.html">Aladin Market</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Développement sur mesure</a></li>
+                        <li><a href="#services">Intelligence Artificielle</a></li>
+                        <li><a href="#services">Intelligence Économique</a></li>
+                        <li><a href="#services">Formation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Ouaga 2000, Ouagadougou</li>
+                        <li><i class="fas fa-envelope"></i> infos@aladints.com</li>
+                        <li><i class="fas fa-phone"></i> +226 53 85 84 97</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ALTES - Aladin Technologies Solutions. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

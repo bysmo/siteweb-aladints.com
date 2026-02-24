@@ -1,0 +1,422 @@
+/* ===================================
+   Product Pages Styles
+   =================================== */
+
+/* Product Hero Section */
+.product-hero {
+    padding: 150px 0 80px;
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none"/><path d="M0 0L50 50M50 0L100 50M0 50L50 100M50 50L100 100" stroke="rgba(37,99,235,0.1)" stroke-width="1"/></svg>');
+    opacity: 0.3;
+}
+
+.product-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product-logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.product-subtitle {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.product-hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Product Description Section */
+.product-description {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.description-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.description-text h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.description-text p {
+    font-size: 17px;
+    color: var(--medium-gray);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.description-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.description-stats .stat {
+    text-align: center;
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(252, 211, 77, 0.05) 100%);
+    border-radius: 16px;
+    border: 2px solid rgba(37, 99, 235, 0.1);
+}
+
+.stat-value {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-yellow) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 14px;
+    color: var(--medium-gray);
+    font-weight: 500;
+}
+
+.description-image {
+    position: relative;
+}
+
+.description-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: var(--shadow-xl);
+}
+
+/* Product Features Section */
+.product-features {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: var(--white);
+    border: 2px solid var(--light-gray);
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-blue);
+}
+
+.pricing-card.featured {
+    border-color: var(--primary-blue);
+    border-width: 3px;
+    box-shadow: var(--shadow-lg);
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.pricing-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 16px;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+}
+
+.price .currency {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--medium-gray);
+    order: 2; /* Place currency after amount */
+    font-size: 0; /* Hide original text */
+}
+
+.price .currency::before {
+    content: 'F CFA';
+    font-size: 16px; /* Restore font size for the new text */
+    display: inline;
+}
+
+.price .amount {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-blue);
+    order: 1; /* Place amount before currency */
+}
+
+.price .period {
+    font-size: 14px;
+    color: var(--medium-gray);
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--dark);
+    margin-bottom: 16px;
+    padding: 8px 0;
+}
+
+.pricing-features i {
+    font-size: 18px;
+    width: 24px;
+    flex-shrink: 0;
+}
+
+.pricing-features .fa-check {
+    color: #10B981;
+}
+
+.pricing-features .fa-times {
+    color: #EF4444;
+    opacity: 0.3;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="rgba(252,211,77,0.1)" stroke-width="2"/></svg>');
+    opacity: 0.3;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.cta-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}
+
+.btn-large {
+    padding: 18px 48px;
+    font-size: 18px;
+}
+
+/* Responsive Design for Product Pages */
+@media (max-width: 992px) {
+    .product-title {
+        font-size: 42px;
+    }
+    
+    .description-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .description-text h2 {
+        font-size: 36px;
+    }
+    
+    .description-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: scale(1.02) translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-hero {
+        padding: 120px 0 60px;
+    }
+    
+    .product-title {
+        font-size: 32px;
+    }
+    
+    .product-subtitle {
+        font-size: 17px;
+    }
+    
+    .product-logo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .product-hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .product-hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .description-text h2 {
+        font-size: 28px;
+    }
+    
+    .description-image img {
+        height: 300px;
+    }
+    
+    .stat-value {
+        font-size: 28px;
+    }
+    
+    .cta-content h2 {
+        font-size: 28px;
+    }
+    
+    .btn-large {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 28px;
+    }
+    
+    .description-text h2 {
+        font-size: 24px;
+    }
+    
+    .price .amount {
+        font-size: 36px;
+    }
+}
